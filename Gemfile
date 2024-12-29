@@ -27,6 +27,11 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'bundler', '~> 2.2.33'
+
+
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -54,8 +59,11 @@ group :development, :test do
 end
 
 group :development do
+  gem 'solargraph'
+  gem 'ruby-lsp'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem 'stringio', '>= 3.1.2'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
