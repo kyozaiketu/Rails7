@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   def new
       @post = Post.new
   end
-  # 追加処理画面
+  # 投稿処理
   def create
       @post = Post.new(post_params)
 
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
   def edit
     # @post = Post.find(params[:id])
   end
-  # 更新処理画面
+  # 更新処理
   def update  
     # @post = Post.find(params[:id])
     if @post.update(post_params)
